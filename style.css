@@ -100,7 +100,8 @@ section {
 }
 
 /* TIPOGRAFIA */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     color: #000000;
@@ -153,23 +154,40 @@ h1 {
     font-size: clamp(24px, 5vw, 40px);
 }
 
+
+
+
+
+
+
 /* ================================= */
 /*  MEDIA QUERY */
 /* ================================= */
-
+/* Mediaquery- bianca */
 @media (max-width: 768px) {
+    /* Se a tela ficar menor ou igual a 768px, ele vai aplicar essa estrutura  */
 
-    /* Menu vira coluna */
+
     .menu {
         display: none;
+        /* aqui o menu vai parar de ser horizontal e vai aparecer os três pontinhos */
         flex-direction: column;
+        /* vai mudar para a parte da coluna */
         background: green;
         position: absolute;
         top: 60px;
         right: 0;
         width: 100%;
+        /* largura da tela inteira */
         text-align: center;
+        /* centraliza os componentes do menu */
     }
+
+    body {
+        background: green;
+        color: rgb(122, 179, 48);
+    }
+    /* vai mudar o texto para verde e o fundo*/
 
     /* Quando ativar */
     .menu.ativo {
@@ -180,11 +198,16 @@ h1 {
     .hamburger {
         display: block;
     }
-
+   /* o usuário vai pode clicar no botão */
     /* Texto menor */
     h1 {
         font-size: 28px;
     }
+    /* Aqui vai deixar o título menor */
+
+
+
+    /* Começo mediaquery do marcelo */
 
     /* PLANTAS RESPONSIVAS */
     .planta-container {
@@ -224,6 +247,7 @@ h1 {
 
 /* CELULARES PEQUENOS */
 @media (max-width: 480px) {
+
     section {
         padding: 20px;
     }
@@ -254,6 +278,8 @@ h1 {
         height: 250px;
     }
 
+
+    /* Começo parte do mediaquery CARLOS */
     /* GALERIA RESPONSIVA */
     #galeria {
         padding: 30px 20px;
