@@ -205,10 +205,6 @@ h1 {
     }
     /* Aqui vai deixar o título menor */
 
-
-
-    /* Começo mediaquery do marcelo */
-
     /* PLANTAS RESPONSIVAS */
     .planta-container {
         grid-template-columns: 1fr;
@@ -277,9 +273,7 @@ h1 {
         width: 250px;
         height: 250px;
     }
-
-
-    /* Começo parte do mediaquery CARLOS */
+    
     /* GALERIA RESPONSIVA */
     #galeria {
         padding: 30px 20px;
